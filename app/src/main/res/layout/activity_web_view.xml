@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebViewActivity">
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/play"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="当前线路：华山论剑"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLength="20"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="视频" />
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:onClick="onClick"
+            android:src="@drawable/close"/>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            style="@android:style/Widget.Material.ProgressBar.Horizontal"/>
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@id/bottom_bar"/>
+</RelativeLayout>

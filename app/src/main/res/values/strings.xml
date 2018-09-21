@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NoVIP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="youku">优酷视频</string>
+    <string name="iqy">爱奇艺</string>
+    <string name="souhu">搜狐视频</string>
+    <string name="mgtv">芒果TV</string>
+    <string name="tencentTV">腾讯视频</string>
+    <string name="letv">乐视视频</string>
+
+
+</resources>

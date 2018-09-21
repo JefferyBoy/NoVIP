@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="decode_channel_text">
+        <item>华山论剑</item>
+        <item>九阳神功</item>
+        <item>六脉神剑</item>
+        <item>拈花指</item>
+        <item>太极</item>
+        <item>黯然销魂</item>
+    </string-array>
+
+    <string-array name="decode_channel_url">
+        <item>http://api.pucms.com/?url=</item>
+        <item>http://xlyy100.com/xlyy.php?url=</item>
+        <item>http://www.a305.org/flv.php?url=</item>
+        <item>http://000o.cc/jx/ty.php?url=</item>
+        <item>http://www.82190555.com/video.php?url=</item>
+        <item>http://jx.598110.com/zuida.php?url=</item>
+    </string-array>
+</resources>
