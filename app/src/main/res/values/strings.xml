@@ -10,6 +10,7 @@
     <string name="mgtv">芒果TV</string>
     <string name="tencentTV">腾讯视频</string>
     <string name="letv">乐视视频</string>
+    <string name="title_activity_login">Sign in</string>
 
 
 </resources>

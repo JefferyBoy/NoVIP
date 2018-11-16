@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#e7e6e6"
     android:orientation="vertical"
-    tools:context=".MainFragment">
+    tools:context="com.novip.app.MainFragment">
 
     <TextView
         android:layout_width="match_parent"

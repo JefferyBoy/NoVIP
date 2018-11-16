@@ -2,15 +2,40 @@
 <resources>
 
     <string-array name="decode_channel_text">
-        <item>华山论剑</item>
-        <item>九阳神功</item>
-        <item>六脉神剑</item>
-        <item>拈花指</item>
-        <item>太极</item>
-        <item>黯然销魂</item>
+        <item>线路1</item>
+        <item>线路2</item>
+        <item>线路3</item>
+        <item>线路4</item>
+        <item>线路5</item>
+        <item>线路6</item>
+        <item>线路7</item>
+        <item>线路8</item>
+        <item>线路9</item>
+        <item>线路10</item>
+        <item>线路11</item>
+        <item>线路13</item>
+        <item>线路14</item>
+        <item>线路15</item>
+        <item>线路16</item>
+        <item>线路17</item>
+        <item>线路18</item>
+        <item>线路19</item>
     </string-array>
 
     <string-array name="decode_channel_url">
+        <item>http://jx.618g.com/?url=</item>
+        <item>http://api.baiyug.vip/index.php?url=</item>
+        <item>http://www.wocao.xyz/index.php?url=</item>
+        <item>https://vip.hackmg.com/jx/index.php?url=</item>
+        <item>http://www.lan8888.cn/jx.php?url=</item>
+        <item>http://jiexi.92fz.cn/player/vip.php?url=</item>
+        <item>http://api.xcq91.top/?url=</item>
+        <item>http://aikan-tv.com/?url=</item>
+        <item>http://jx.jfysz.cn/jx.php/?url=</item>
+        <item>http://api.bbbbbb.me/yunjx/?url=</item>
+        <item>https://jiexi.071811.cc/jx.php?url=</item>
+        <item>http://yun.baiyug.cn/vip/index.php?url=</item>
+        <item>http://aikan-tv.com/?url=</item>
         <item>http://api.pucms.com/?url=</item>
         <item>http://xlyy100.com/xlyy.php?url=</item>
         <item>http://www.a305.org/flv.php?url=</item>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WebViewActivity">
+    tools:context="com.novip.web.WebViewActivity">
 
     <FrameLayout
         android:id="@+id/bottom_bar"

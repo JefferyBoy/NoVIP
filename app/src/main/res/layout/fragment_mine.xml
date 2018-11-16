@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#e7e6e6"
     android:orientation="vertical"
-    tools:context=".MineFragment">
+    tools:context="com.novip.app.MineFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <RelativeLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp">
                 <ImageView
@@ -29,29 +29,54 @@
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/vip"/>
-            </RelativeLayout>
-            <com.novip.novip.view.SettingItemView
-                android:id="@+id/set1"
+                <TextView
+                    android:id="@+id/vip_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP剩余时间：1天"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"/>
+            </FrameLayout>
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"/>
-            <com.novip.novip.view.SettingItemView
-                android:id="@+id/set2"
+                android:visibility="gone"/>
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_vipcode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"/>
-            <com.novip.novip.view.SettingItemView
-                android:id="@+id/set3"
+                android:visibility="gone"/>
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_qqgroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <com.novip.novip.view.SettingItemView
-                android:id="@+id/set4"
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_adminqq"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <com.novip.novip.view.SettingItemView
-                android:id="@+id/set5"
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_share"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.novip.view.SettingItemView
+                android:id="@+id/set_exit_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
         </LinearLayout>
     </ScrollView>
 
