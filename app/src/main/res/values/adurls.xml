@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="adUrls">
-        <item>img3.kfkfl.cn</item>
-        <item>img3.kfkfl.cn</item>
-        <item>c.cnzz.com</item>
-        <item>s13.cnzz.com</item>
-        <item>js.kfkfl.cn</item>
-        <item>img.lianmengma.com</item>
-        <item>hnhbyxdq</item>
-        <item>hongyangpai</item>
+        <!--http://api.bbbbbb.me/yunjx/?url=-->
+        <item>t.2d-c.cn</item>
+        <!--https://jiexi.071811.cc/jx.php?url=-->
+        <item>1d1a.com</item>
+        <item>52fanyin.com</item>
+
+        <!--http://app.baiyug.cn:2019/vip/index.php?url=-->
+        <item>e.gsycdb.com</item>
+
+
+
     </string-array>
 </resources>

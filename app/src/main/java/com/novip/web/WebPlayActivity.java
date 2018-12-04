@@ -54,9 +54,12 @@ public class WebPlayActivity extends BaseActivity {
         webSettings.setUseWideViewPort(true);
         webSettings.setDomStorageEnabled(true);
         webSettings.setJavaScriptEnabled(true);
+        //设置浏览器标志
+        //webSettings.setUserAgentString("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36");
+
         //是否可以后退
         webView.canGoBack();
-        webView.setWebViewClient(new WebViewClient() {
+        webView.setWebViewClient(new NoADWebViewClent() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 //复写shouldOverrideUrlLoading()方法，使得打开网页时不调用系统浏览器， 而是在本WebView中显示

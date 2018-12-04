@@ -17,7 +17,7 @@ public class NoADWebViewClent extends WebViewClient{
         } else {
             //有广告的请求数据，我们直接返回空数据，注：不能直接返回null
             return new WebResourceResponse(null, null, null);
-        }
+    }
 
     }
 }
