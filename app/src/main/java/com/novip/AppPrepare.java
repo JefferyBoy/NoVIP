@@ -15,6 +15,7 @@ import com.alibaba.fastjson.JSON;
 import com.novip.app.LoginActivity;
 import com.novip.app.MainActivity;
 import com.novip.app.StartActivity;
+import com.novip.model.AdUrl;
 import com.novip.model.Novip;
 import com.novip.model.Platform;
 import com.novip.model.User;
@@ -48,7 +49,8 @@ public class AppPrepare {
                 AppApplication.getInstance().getvParsers() != null &&
                 AppApplication.getInstance().getNovip() != null &&
                 AppApplication.getInstance().getUser() != null &&
-                AppApplication.getInstance().getPlatforms() != null){
+                AppApplication.getInstance().getPlatforms() != null &&
+                AppApplication.getInstance().getFilterUrls() != null){
             cb.onPrepared();
         }
     }
@@ -178,6 +180,7 @@ public class AppPrepare {
     public void step4_checkParser_Platform(){
         step4_checkVideoParser();
         step4_checkPlatforms();
+        step4_getAdFilter();
     }
 
     private void step4_checkVideoParser(){
@@ -216,6 +219,30 @@ public class AppPrepare {
                 }
             }
         });
+    }
 
+    private void step4_getAdFilter(){
+        Http.getAdUrl(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if(response.code() == 200){
+                    List<AdUrl> urls = JSON.parseArray(response.body().string(),AdUrl.class);
+                    if(urls != null && !urls.isEmpty()){
+                        String[] ads = new String[urls.size()];
+                        int i = 0;
+                        for(AdUrl url: urls){
+                            ads[i++] = url.getUrl();
+                        }
+                        AppApplication.getInstance().setFilterUrls(ads);
+                        isAppprepared();
+                    }
+                }
+            }
+        });
     }
 }

@@ -109,6 +109,15 @@ public class Http {
         getClient().newCall(request).enqueue(cb);
     }
 
+    public static void getAdUrl(Callback cb){
+        HttpUrl url = new HttpUrl.Builder().host(host).scheme("http").port(port)
+                .addPathSegment("novip")
+                .addPathSegment("ad")
+                .addPathSegment("ad_filter")
+                .build();
+        Request request = new Request.Builder().url(url).build();
+        getClient().newCall(request).enqueue(cb);
+    }
     public static void changePassword(String phone,String password,String new_password,Callback cb){
         HttpUrl url = new HttpUrl.Builder().host(host).scheme("http").port(port)
                 .addPathSegment("novip")

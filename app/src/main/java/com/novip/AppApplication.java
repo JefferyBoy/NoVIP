@@ -24,6 +24,7 @@ public class AppApplication extends Application {
     private static AppApplication instance;
     private Novip novip;
     private List<Platform> platforms;
+    private String[] filterUrls;
 
     @Override
     public void onCreate() {
@@ -101,5 +102,13 @@ public class AppApplication extends Application {
 
     public void setPlatforms(List<Platform> platforms) {
         this.platforms = platforms;
+    }
+
+    public String[] getFilterUrls() {
+        return filterUrls;
+    }
+
+    public void setFilterUrls(String[] filterUrls) {
+        this.filterUrls = filterUrls;
     }
 }

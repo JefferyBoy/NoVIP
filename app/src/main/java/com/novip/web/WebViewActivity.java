@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -91,7 +92,7 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
         webSettings.setJavaScriptEnabled(true);
         //是否可以后退
         webView.canGoBack();
-        webView.setWebViewClient(new NoADWebViewClent() {
+        webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if(url.startsWith("http") || url.startsWith("https")){
